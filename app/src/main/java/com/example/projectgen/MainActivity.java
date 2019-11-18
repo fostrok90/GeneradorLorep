@@ -3,8 +3,11 @@ package com.example.projectgen;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,7 +33,16 @@ public class MainActivity extends AppCompatActivity {
 
         };
 
-        
+        btn_Generador.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view){
+                Random rand = new Random();
+                int Questions = rand.nextInt(bound:5);
+
+                edt_Questions.setText(questions[Questions]);
+            }
+        });
 
 
     }
