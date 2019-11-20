@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">projectGen</string>
+    <string name="generador">Generador</string>
+    <string name="texto_random">Texto Random</string>
+    <string name="generador_lorep_ipsum">Generador Lorep Ipsum</string>
 </resources>

@@ -10,10 +10,12 @@ import android.widget.TextView;
 
 import java.util.Random;
 
+import static android.widget.EditText.*;
+
 public class MainActivity extends AppCompatActivity {
 
-   private Button btn_Generador;
-   private EditText edt_Questions;
+    Button btn_Generador;
+    EditText edt_Questions;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,8 +23,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        btn_Generador = findViewById(R.id.btn_Generador);
-        edt_Questions = findViewById(R.id.edt_Questions);
+        btn_Generador = (Button)findViewById(R.id.btn_Generador);
+        edt_Questions = (EditText)findViewById(R.id.edt_Questions);
 
       /*  final String questions[] = {
 
@@ -53,11 +55,11 @@ public class MainActivity extends AppCompatActivity {
         btn_Generador.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TextView.setText(generateString(6));
+                edt_Questions.setText(generateString(100));
 
             }
         });
-        
+
     }
 
     private String generateString(int length) {

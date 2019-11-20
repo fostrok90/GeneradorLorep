@@ -11,7 +11,7 @@
         android:id="@+id/btn_Generador"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Generador"
+        android:text="@string/generador"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/edt_Questions"
         app:layout_constraintStart_toStartOf="@+id/edt_Questions"
@@ -23,11 +23,12 @@
         android:layout_height="136dp"
         android:layout_marginTop="304dp"
         android:ems="10"
-        android:hint="Texto Random"
+        android:hint="@string/texto_random"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/edt_titulo"
@@ -35,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="160dp"
         android:fontFamily="sans-serif-smallcaps"
-        android:text="Generador Lorep Ipsum"
+        android:text="@string/generador_lorep_ipsum"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
