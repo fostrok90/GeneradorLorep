@@ -63,10 +63,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private String generateString(int length) {
-        char[] chars = ("Lorem ipsum dolor sit amet," +
-                " consectetur adipiscing elit. Cras auctor sem ac iaculis ullamcorper. Nulla quis bibendum ex, et sodales ex. Phasellus a est vel mauris semper accumsan vitae eget nulla. Donec at elit a libero sodales semper. Suspendisse libero ipsum, elementum a faucibus ut, egestas nec ante." +
-                " Integer condimentum rutrum sollicitudin. Proin eget nisi sed leo congue volutpat ut vitae nulla." +
-                " In vulputate dui ac lacinia hendrerit. Aenean lobortis tincidunt leo, in elementum odio iaculis nec.").toCharArray();
+        char[] chars = ("\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor sem ac iaculis ullamcorper. Nulla quis bibendum ex, et sodales ex.").toCharArray();
         StringBuilder stringBuilder = new StringBuilder();
         Random random = new Random();
         for(int i =1; i < length; i++){

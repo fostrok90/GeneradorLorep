@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bn"
     tools:context=".MainActivity">
 
 
@@ -24,6 +25,8 @@
         android:layout_marginTop="304dp"
         android:ems="10"
         android:hint="@string/texto_random"
+        android:textStyle="bold"
+        android:textSize="25sp"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,7 +41,7 @@
         android:fontFamily="sans-serif-smallcaps"
         android:text="@string/generador_lorep_ipsum"
         android:textAlignment="center"
-        android:textSize="24sp"
+        android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
